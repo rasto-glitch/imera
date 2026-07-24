@@ -1,38 +1,55 @@
 {
   "expo": {
-    "name": "imera",
+    "name": "Imera",
     "slug": "imera",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/brand/icon-1024.png",
     "scheme": "imera",
     "userInterfaceStyle": "automatic",
-    "ios": {
-      "icon": "./assets/expo.icon"
-    },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "backgroundColor": "#EDEAE0",
+        "foregroundImage": "./assets/brand/adaptive-icon-fg.png",
+        "backgroundImage": "./assets/brand/adaptive-icon-bg.png"
       },
       "predictiveBackGestureEnabled": false
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/brand/favicon-32.png"
     },
     "plugins": [
       "expo-router",
+      "expo-sqlite",
+      "expo-background-task",
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 76
+          "backgroundColor": "#EDEAE0",
+          "image": "./assets/brand/adaptive-icon-fg.png",
+          "imageWidth": 200,
+          "dark": {
+            "backgroundColor": "#22201D"
+          }
         }
-      ]
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/brand/notification-icon.png",
+          "color": "#2E6B57"
+        }
+      ],
+      [
+        "expo-calendar",
+        {
+          "calendarPermission": "Imera writes your events to the device calendar so they show up in the calendars you already sync."
+        }
+      ],
+      "@react-native-community/datetimepicker",
+      "expo-background-task",
+      "expo-sharing"
     ],
     "experiments": {
       "typedRoutes": true,

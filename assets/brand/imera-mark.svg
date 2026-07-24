@@ -1,0 +1,8 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <polygon points="256,95 230,51 282,51" fill="currentColor"/>
+  <circle cx="256" cy="256" r="161" stroke="currentColor" stroke-width="29" stroke-dasharray="55 29.3"/>
+  <g transform="rotate(45 256 256)">
+    <line x1="256" y1="256" x2="256" y2="139" stroke="currentColor" stroke-width="22" stroke-linecap="round"/>
+  </g>
+  <circle cx="256" cy="256" r="29" fill="currentColor"/>
+</svg>
